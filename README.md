@@ -41,4 +41,4 @@ Ensure you have Python installed on your machine.
 Run the script directly from your terminal:
 python jogo_misterioso.py
 
-👨‍💻 Coded for fun, logic, and a quick Python warm-up.
+👨‍💻 Coded for fun, logic, and a quick Python warm-up
