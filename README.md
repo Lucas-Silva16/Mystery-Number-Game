@@ -29,9 +29,9 @@ Attempt 2: 15
 
 Attempt 3: 13
 > Congratulations! You've cracked the mystery number!
+Game Over.
 ```
 
-Game Over.
 🐍 Requirements
 Python 3.x
 
