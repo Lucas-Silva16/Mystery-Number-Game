@@ -1,58 +1,44 @@
- 🎲 Jogo do Número Misterioso
+# 🎲 Mystery Number: Terminal Guessing Game
 
-Este é um pequeno jogo de consola em Python onde o jogador tenta adivinhar um **número aleatório entre 0 e 20**.
+![Language](https://img.shields.io/badge/Language-Python-FFD43B)
+![Interface](https://img.shields.io/badge/Interface-CLI-lightgrey)
+![Type](https://img.shields.io/badge/Type-Logic_Minigame-success)
 
-## 🎯 Objetivo
+## 🎯 Overview
+A lightweight, terminal-based minigame developed in **Python**. This project serves as a practical exercise in control flow, standard I/O handling, and pseudo-random number generation (PRNG).
 
-Adivinhar corretamente o **número misterioso** escolhido aleatoriamente pelo computador, usando no máximo **3 tentativas**.
+The objective is simple but strictly constrained: deduce the system's randomly generated integer (between 0 and 20) using a maximum of **3 attempts**.
 
-## 🕹️ Regras do Jogo
+## 🕹️ Core Mechanics & Rules
+- **Pseudo-Random Generation:** At runtime, the system selects a target integer $x$ where $0 \le x \le 20$.
+- **Algorithmic Constraint:** The player is limited to a strict execution loop of exactly 3 attempts.
+- **Feedback Heuristic:** After each incorrect guess, the game evaluates the input and provides conditional directional feedback (Higher or Lower), encouraging the use of basic *Binary Search* logic to optimize the next guess.
+- **Win/Loss State:** The execution loop breaks immediately upon a correct guess (Victory) or reveals the target number if the iteration limit is reached (Defeat).
 
-- O computador escolhe um número aleatório entre `0` e `20`.
-- O jogador tem **3 tentativas** para acertar o número.
-- Após cada tentativa, o jogo informa se o número introduzido é **maior** ou **menor** que o número correto.
-- Se o jogador acertar, ganha o jogo.
-- Se falhar as 3 tentativas, o jogo termina e o número correto é revelado.
+## 💡 Execution Example
 
-## 💡 Exemplo de Execução
+```text
+Welcome to the Mystery Number Game!
+Try to guess the target integer between 0 and 20.
 
-```
-Bem-vindo ao Jogo do Número Misterioso!
-Tenta adivinhar o número entre 0 e 20.
+Attempt 1: 10
+> The target number is Higher!
 
-Tentativa 1: 10
-O número é mais alto!
+Attempt 2: 15
+> The target number is Lower!
 
-Tentativa 2: 15
-O número é mais baixo!
+Attempt 3: 13
+> Congratulations! You've cracked the mystery number!
 
-Tentativa 3: 13
-Parabéns! Acertaste o número!
+Game Over.
 
-Fim do jogo.
-```
+🐍 Requirements
+Python 3.x
 
-## 🐍 Requisitos
+▶️ How to Play
+Ensure you have Python installed on your machine.
 
-- Python 3.x
-
-## ▶️ Como Jogar
-
-1. Certifica-te de que tens o Python instalado.
-2. Corre o ficheiro Python com:
-
-```bash
+Run the script directly from your terminal:
 python jogo_misterioso.py
-```
 
-## ✨ Funcionalidades futuras (sugestões)
-
-- Adicionar sistema de pontuação.
-- Permitir que o jogador escolha o número máximo.
-- Contador de vitórias e derrotas.
-- Interface gráfica com tkinter ou web (opcional).
-
----
-
-👨‍💻 Criado para fim de divertimento 
-
+👨‍💻 Coded for fun, logic, and a quick Python warm-up.
